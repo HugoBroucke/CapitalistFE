@@ -21,57 +21,119 @@ and open the template in the editor.
         <product>
             <id>01</id>
             <name>Pied</name>
-            <logo></logo>
-            <cout>3</cout>
+            <logo><img src="webapp/foot.png"/></logo>
+            <cout>4</cout>
             <croissance>1.07</croissance>
-            <revenu></revenu>
-            <vitesse></vitesse>
-            <quantite></quantite>
-            <timeleft></timeleft>
-            <managerUnlocked></managerUnlocked>
+            <revenu>1</revenu>
+            <vitesse>0.5</vitesse>
+            <quantite>15</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name></name>
-                    <logo></logo>
-                    <seuil></seuil>
-                    <idcible></idcible>
-                    <ratio></ratio>
-                    <typeratio></typeratio>
-                    <unlocked></unlocked>
+                    <name>Niveau 1</name>
+                    <logo><img src="webapp/foot.png"/></logo>
+                    <seuil>15</seuil>
+                    <idcible>01</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name></name>
-                    <logo></logo>
-                    <seuil></seuil>
-                    <idcible></idcible>
-                    <ratio></ratio>
-                    <typeratio></typeratio>
-                    <unlocked></unlocked>
+                    <name>Niveau 2</name>
+                    <logo><img src="webapp/foot.png"/></logo>
+                    <seuil>40</seuil>
+                    <idcible>01</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
                 </pallier>
             </palliers>
         </product>
         <product>
-            <id></id>
-            <name></name>
-            <logo></logo>
-            <cout></cout>
-            <croissance></croissance>
-            <revenu></revenu>
-            <vitesse></vitesse>
-            <quantite></quantite>
-            <timeleft></timeleft>
-            <managerUnlocked></managerUnlocked>
+            <id>02</id>
+            <name>Oeil</name>
+            <logo><img src="webapp/foot.png"/></logo>
+            <cout>10</cout>
+            <croissance>1.07</croissance>
+            <revenu>7</revenu>
+            <vitesse>1</vitesse>
+            <quantite>15</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
             <palliers>
+                <pallier>
+                    <name>Niveau 1</name>
+                    <logo><img src="webapp/eyes.png"/></logo>
+                    <seuil>25</seuil>
+                    <idcible>01</idcible>
+                    <ratio>3</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Niveau 2</name>
+                    <logo><img src="webapp/eyes.png"/></logo>
+                    <seuil>50</seuil>
+                    <idcible>01</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>GAIN</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
             </palliers>
         </product>
     </products>
     <allunlocks>
     </allunlocks>
     <upgrades>
+        <palliers>
+        <pallier>
+                    <name>Profit des pieds x3 </name>
+                    <logo><img src="webapp/boost.png"/></img></logo>
+                    <seuil>150</seuil>
+                    <idcible>01</idcible>
+                    <ratio></ratio>
+                    <typeratio></typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+        <pallier>
+            </palliers>
     </upgrades>
     <angelupgrades>
+        <palliers>
+        <pallier>
+                    <name>Toto</name>
+                    <logo><img src="webapp/toto.png"/></img></logo>
+                    <seuil>150</seuil>
+                    <idcible>01</idcible>
+                    <ratio></ratio>
+                    <typeratio></typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+        <pallier>
+            </palliers>
     </angelupgrades>
     <managers>
+        <palliers>
+        <pallier>
+                    <name>Toto</name>
+                    <logo><img src="webapp/toto.png"/></img></logo>
+                    <seuil>150</seuil>
+                    <idcible>01</idcible>
+                    <ratio></ratio>
+                    <typeratio></typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+        <pallier>
+                    <name>Cynthia</name>
+                    <logo><img src="webapp/CYNTHIA.png"/></img></logo>
+                    <seuil>500</seuil>
+                    <idcible>02</idcible>
+                    <ratio></ratio>
+                    <typeratio></typeratio>
+                    <unlocked>false</unlocked>
+        </pallier>
+        <palliers>
     </managers>
 
 </world>
