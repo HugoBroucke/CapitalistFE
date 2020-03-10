@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { World, Pallier, Product } from './world';
 
 @Injectable({
@@ -7,7 +7,7 @@ import { World, Pallier, Product } from './world';
 })
 export class RestserviceService {
 
-  server = "http://localhost:8080/adventureISIS/"
+  server = "http://localhost:8080/"
   user = "";
 
   public getServer()
@@ -38,6 +38,7 @@ export class RestserviceService {
     return Promise.reject(error.message || error);
    }
    getWorld(): Promise<World> {
+     console.log("get world");
     return this.http.get(this.server + "demo/generic/world")
     .toPromise().catch(this.handleError);
    };

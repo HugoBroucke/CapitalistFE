@@ -7,6 +7,7 @@ import { ProductComponent } from './product/product.component';
 
 import { RestserviceService } from './restservice.service';
 import { BigvaluePipe } from './bigvalue.pipe';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { BigvaluePipe } from './bigvalue.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [RestserviceService],
   bootstrap: [AppComponent]

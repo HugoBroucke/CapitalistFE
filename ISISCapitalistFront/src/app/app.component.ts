@@ -18,6 +18,7 @@ export class AppComponent {
     this.server = service.getServer();
     service.getWorld().then(
       world  => {
+        console.log(world)
         this.world = world;
       });
       }
