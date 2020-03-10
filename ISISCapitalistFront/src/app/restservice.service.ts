@@ -38,7 +38,7 @@ export class RestserviceService {
     return Promise.reject(error.message || error);
    }
    getWorld(): Promise<World> {
-    return this.http.get(this.server + "webresources/generic/world")
+    return this.http.get(this.server + "demo/generic/world")
     .toPromise().catch(this.handleError);
    };
   
