@@ -13,6 +13,7 @@ import { World, Product, Pallier } from './world';
 export class AppComponent {
   world: World = new World();
   server: string;
+  qmulti: string;
   title = 'ISISCapitalistFront';
   constructor(private service: RestserviceService) {
     this.server = service.getServer();
@@ -21,5 +22,5 @@ export class AppComponent {
         console.log(world)
         this.world = world;
       });
-      }
+    }
 }

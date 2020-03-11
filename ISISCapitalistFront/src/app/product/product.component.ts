@@ -1,5 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { Product } from '../world';
+
+declare var require;
+const ProgressBar = require("progressbar.js");
 
 @Component({
   selector: 'app-product',
@@ -7,7 +10,8 @@ import { Product } from '../world';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
+  progressbar: any;
+  @ViewChild('bar') progressBarItem;
   constructor() { }
   product: Product;
     @Input()
@@ -16,6 +20,7 @@ export class ProductComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    this.progressbar = new ProgressBar.Line(this.progressBarItem.nativeElement, { strokeWidth: 50, color: '#00f00'});
   }
 
 }

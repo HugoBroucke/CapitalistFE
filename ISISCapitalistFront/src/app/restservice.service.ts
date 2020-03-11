@@ -10,22 +10,22 @@ export class RestserviceService {
   server = "http://localhost:8080/"
   user = "";
 
-  public getServer()
+  public getServer() : string
   {
     return this.server;
   }
 
-  public getUser()
+  public getUser() : string
   {
     return this.server;
   }
 
-  public setServer(server)
+  public setServer(server: string)
   {
     this.server = server;
   }
 
-  public setUser(user)
+  public setUser(user: string)
   {
     this.user = user;
   }
@@ -42,5 +42,11 @@ export class RestserviceService {
     return this.http.get(this.server + "demo/generic/world")
     .toPromise().catch(this.handleError);
    };
+
+   private setHeaders(user: string): HttpHeaders {
+     var headers = new HttpHeaders();
+     headers.append("X-User",user);
+     return headers;
+   }
   
 }
